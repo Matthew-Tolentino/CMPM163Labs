@@ -26,3 +26,18 @@ Lab4
 a. x = u*7
 b. y = v*7
 c. (.375, .25) = white
+
+Video: https://drive.google.com/open?id=1cjkWZiBdLsYQRBpk_kvqRc3E8wHFQAx6
+
+Middle Cube: Followed instructions from lab and implemented textures using three.js texture functionality.
+	    Also utilized the normal map for dynamic lighting.
+
+Left Cube: Basically created the same as the middle cube but without a normal map.
+
+Right Cube: Created textures through loading custom shaders by following the directions.
+
+Top Cube: The same as the right cube however, I utilized a different texture and made extra calculations
+  	 in the fragment shader to map the uv in a tiled format. I solved this by using these eqations:
+ 	 	if (u < .5) ? u = u*2 : u = (u-.5)*2;
+		if (v < .5) ? v = v*2 : v = (v-.5)*2;
+	 by utilizing these equations I got the correct uv coordinates to send to gl_FragColor.
