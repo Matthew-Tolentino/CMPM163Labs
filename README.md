@@ -23,8 +23,10 @@ Right Cube: Followed the instructions in Part2 in order to create custom fragmen
 -------------------------------------------------------------------------------
 
 Lab4
-a. x = u*7
-b. y = v*7
+a. x = u * 7
+
+b. y = v * 7
+
 c. (.375, .25) = white
 
 Video: https://drive.google.com/open?id=1cjkWZiBdLsYQRBpk_kvqRc3E8wHFQAx6
