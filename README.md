@@ -19,3 +19,10 @@ Top Cube: Created a new Fragment shader and changed the interpolation based on t
 	 with Hex values to create an interesting color pallete.
 	 
 Right Cube: Followed the instructions in Part2 in order to create custom fragment and vertex shaders.
+
+-------------------------------------------------------------------------------
+
+Lab4
+a. x = u*7
+b. y = v*7
+c. (.375, .25) = white

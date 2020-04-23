@@ -24,10 +24,9 @@
 
 			function addTextureShaderCube() {
 				if(count == 2) {
-					let uniforms = {
-		        		colorB: {type: 'vec3', value: new THREE.Color(0xACB6E5)},
-		        		colorA: {type: 'vec3', value: new THREE.Color(0x74ebd5)}
-		        	};
+					var uniforms = {
+						texture1: {type: "t", value: THREE.ImageUtils.loadTexture("172.jpg")}
+					};
 					
 		      		geometry1 = new THREE.BoxGeometry(1, 1, 1);
 		      		material1 =  new THREE.ShaderMaterial({
@@ -42,11 +41,63 @@
 		    	}
 			}
 
+			function addTiledShaderCube() {
+				if (count2 == 2) {
+					var uniforms3 = {
+						texture3: {type: "t", value: THREE.ImageUtils.loadTexture("176.jpg")}
+					};
+
+					geometry3 = new THREE.BoxGeometry(1, 1, 1);
+					material3 = new THREE.ShaderMaterial({
+						uniforms: uniforms3,
+						fragmentShader: fshader2,
+						vertexShader: vshader2,
+						precision: "mediump"});
+
+					mesh3 = new THREE.Mesh(geometry3, material3);
+					mesh3.position.y = 2;
+					scene.add(mesh3);
+				}
+			}
+
 			// Load Shaders
 			THREE.Cache.enabled = true;
 			var count = 0;
+			var count2 = 0;
 			var loader = new THREE.FileLoader();
-			var fshader, vshader;
+			var fshader, vshader, fshader2, vshader2;
+
+			loader.load('shaders/vertexShader2.vert',
+				function(data) {
+					console.log(data);
+					vshader2 = data;
+					count2 += 1;
+					addTiledShaderCube();
+				},
+
+				function(xhr) {
+					console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
+				},
+				
+				function(err) {
+					console.error('An error happend');
+				});
+
+			loader.load('shaders/fragmentShader2.frag',
+				function (data) {
+					console.log(data);
+					fshader2 = data;
+					count2 += 1;
+					addTiledShaderCube();
+				},
+
+				function(xhr) {
+					console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
+				},
+
+				function (err) {
+	      			console.error('An error happened');
+	      		});
 
   			loader.load('shaders/vertexShader.vert',
 	      		// onLoad callback
@@ -98,6 +149,16 @@
  			var cube2 = new THREE.Mesh(geometry, material);
 			scene.add(cube2);
 			cube2.position.x -= 2;
+
+			// // Add third cube with tiled texture
+			// var texture2 = THREE.ImageUtils.loadTexture("176.jpg");
+			// var normMap2 = THREE.ImageUtils.loadTexture("176_norm.jpg");
+
+			// var geometry3 = new THREE.BoxGeometry();
+			// var material3 = new THREE.MeshPhongMaterial({ map: texture2, normalMap: normMap2 });
+			// var cube3 = new THREE.Mesh(geometry3, material3);
+			// scene.add(cube3);
+			// cube3.position.y += 2;
 
 			// add the light
 			var light = new THREE.PointLight(0xffffff, 1, 1000);
