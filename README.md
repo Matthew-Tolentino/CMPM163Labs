@@ -8,6 +8,7 @@ Video: https://drive.google.com/open?id=1vSHDsyowr0fyHhjxGg9DJ0-n_ee-_6Vi
 -------------------------------------------------------------------------------
 
 Lab3
+
 Video: https://drive.google.com/open?id=15LU04VW5fbpUmwzZfEzrOG7zBfPK1-rU
 
 Far Left Cube: Used THREE.js to create material using MeshNormalMaterial and setting flatshading to true.
@@ -23,6 +24,7 @@ Right Cube: Followed the instructions in Part2 in order to create custom fragmen
 -------------------------------------------------------------------------------
 
 Lab4
+
 a. x = u * 7
 
 b. y = v * 7
@@ -39,7 +41,7 @@ Left Cube: Basically created the same as the middle cube but without a normal ma
 Right Cube: Created textures through loading custom shaders by following the directions.
 
 Top Cube: The same as the right cube however, I utilized a different texture and made extra calculations
-  	 in the fragment shader to map the uv in a tiled format. I solved this by using these eqations:
- 	 	if (u < .5) ? u = u*2 : u = (u-.5)*2;
-		if (v < .5) ? v = v*2 : v = (v-.5)*2;
+  	 in the fragment shader to map the uv in a tiled format. I solved this by using these equations:  
+ 	    if (u < .5) ? u = u * 2 : u = (u-.5) * 2;  
+	    if (v < .5) ? v = v * 2 : v = (v-.5) * 2;  
 	 by utilizing these equations I got the correct uv coordinates to send to gl_FragColor.
