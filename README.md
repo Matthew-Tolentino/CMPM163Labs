@@ -50,6 +50,8 @@ Top Cube: The same as the right cube however, I utilized a different texture and
 
 Lab5
 
+Video: https://drive.google.com/open?id=17L9Iy87ih4KXOWNrVz3sLTaseVeo9icq
+
 My modifications for this assignment inclues adding in particle systems by following the tutorial, changing
 the color of the particles by using the unity interface, adding in new models that were in the asset folder
 of the project but not used, and changing the material of the checkpoints by creating a new materical in the
