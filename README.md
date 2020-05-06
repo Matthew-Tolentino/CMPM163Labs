@@ -45,3 +45,12 @@ Top Cube: The same as the right cube however, I utilized a different texture and
  	    if (u < .5) ? u = u * 2 : u = (u-.5) * 2;  
 	    if (v < .5) ? v = v * 2 : v = (v-.5) * 2;  
 	 by utilizing these equations I got the correct uv coordinates to send to gl_FragColor.
+
+-------------------------------------------------------------------------------
+
+Lab5
+
+My modifications for this assignment inclues adding in particle systems by following the tutorial, changing
+the color of the particles by using the unity interface, adding in new models that were in the asset folder
+of the project but not used, and changing the material of the checkpoints by creating a new materical in the
+unity interface and playing around with the settings. 
