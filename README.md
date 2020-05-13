@@ -50,9 +50,30 @@ Top Cube: The same as the right cube however, I utilized a different texture and
 
 Lab5
 
-Video: https://drive.google.com/open?id=17L9Iy87ih4KXOWNrVz3sLTaseVeo9icq
-
 My modifications for this assignment inclues adding in particle systems by following the tutorial, changing
 the color of the particles by using the unity interface, adding in new models that were in the asset folder
 of the project but not used, and changing the material of the checkpoints by creating a new materical in the
 unity interface and playing around with the settings. 
+
+-------------------------------------------------------------------------------
+
+Lab6
+
+Spotlight - A flashlight. Point in a direction based on rotation and illuminate all objects within its cone.
+Directional Light - The sun. Effects all the objects in the scene lighting them based on direction set by its
+		    rotation.
+Point light - A bare lightbulb. Illuminates objects in the scene based on its position in the scene and shines
+	      equally in all directions.
+Area light - Only work when baking a light map. Shines in all directions to one side of a rectangular plane
+
+Real Life Material - For this I decided to make the material for my deoderant cap which is a reddish opaque 
+		    material. To make this in unity I created a new material and changed its color to closely 
+		    that of the cap and then gave it a metallic alpha. After that I set its metallic variable
+ 		    to zero since its not metalic at all and then played with its transparency to make it look
+		    vaguely opaque.
+
+Textures - For the textures I created a brick wall and a pile of wood. For the brick wall I created a material 
+	  with a diffuse shader so that light will spread evenly on it. However on the wood pile I applied a
+	  specular shader to try and give it a shiny wood finish property.
+
+Skybox - I added in a free skybox from the unity store that gives a faint light almost like the sun has just set. 
