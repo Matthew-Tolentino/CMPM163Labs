@@ -59,7 +59,7 @@ unity interface and playing around with the settings.
 
 Lab6
 
-![](lab6/FullScene.png)
+![](lab6/FullScene.PNG)
 
 Spotlight - A flashlight. Point in a direction based on rotation and illuminate all objects within its cone.
 Directional Light - The sun. Effects all the objects in the scene lighting them based on direction set by its
@@ -68,7 +68,8 @@ Point light - A bare lightbulb. Illuminates objects in the scene based on its po
 	      equally in all directions.
 Area light - Only work when baking a light map. Shines in all directions to one side of a rectangular plane
 
-![](lab6/Capture.png)
+![](lab6/Capture.PNG)
+![](lab6/Material.jpg)
 
 Real Life Material - For this I decided to make the material for my deoderant cap which is a reddish opaque 
 		    material. To make this in unity I created a new material and changed its color to closely 
